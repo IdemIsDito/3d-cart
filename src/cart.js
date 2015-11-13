@@ -23,13 +23,15 @@ export class Cart {
     });
     return total;
   }
+
   addCartItem (event) {
       let files = event.target.files;
+
+      //TODO post files to server to validate --> handle response
       _.forEach(files, (file) => {
         let reader = new FileReader();
         reader.readAsDataURL(file);
         reader.onload = () => {
-            debugger;
             this.cartItems.push(new cartItem({
               FileName: file.name,
               FileSize: file.size,
@@ -53,17 +55,3 @@ export class Cart {
     this.cartItems = this.cartService.getCartItems();
   }
 }
-
-// export class FileListToArrayValueConverter {
-//   toView(fileList) {
-//     debugger;
-//     let files = [];
-//     if (!fileList) {
-//       return files;
-//     }
-//     for(let i = 0; i < fileList.length; i++) {
-//       files.push(fileList.item(i));
-//     }
-//     return files;
-//   }
-// }

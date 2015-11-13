@@ -3,7 +3,6 @@ import {cartItem} from '../models/cartItem';
 
 export class cartService {
   getCartItems(){
-    //Mocked cartItems
     let items = [];
     // items.push(new cartItem({
     //   FileName: 'Model',
