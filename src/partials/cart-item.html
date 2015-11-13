@@ -1,0 +1,21 @@
+<template>
+  <div class="row">
+    <div class="col-xs-6">
+        <img class="img-thumbnail cart-thumbnail pull-left" src="http://placehold.it/80">
+        <h4>${cartitem.FileName}</h4>
+        <p>${dimensions} | <span innerHtml="${volume}"></span></p>
+        <p>Filesize: ${fileSize}</p>
+    </div>
+    <div class="col-xs-6">
+      <form class="form form-inline pull-right">
+        <div class="form-group">
+          <label>Quantity:</label>
+          <input type="number" min="0" class="form-control cart-quantity text-right" value.bind="cartitem.Quantity">
+        </div>
+        <button click.trigger="context.removeCartItem(cartitem)" title="Remove item from cart" type="button" class="btn btn-danger">
+          <i class="fa fa-trash"></i> Remove
+        </button>
+      </form>
+    </div>
+  </div>
+</template>

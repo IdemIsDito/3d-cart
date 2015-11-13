@@ -62,6 +62,7 @@
       "aurelia-binding": "github:aurelia/binding@^0.11.0",
       "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.19.0",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.12.0",
+      "aurelia-dialog": "github:aurelia/dialog@^0.4.4",
       "aurelia-event-aggregator": "github:aurelia/event-aggregator@^0.10.0",
       "aurelia-fetch-client": "github:aurelia/fetch-client@^0.4.0",
       "aurelia-framework": "github:aurelia/framework@^0.18.0",
@@ -85,6 +86,8 @@
       "core-js": "npm:core-js@^1.2.6",
       "fetch": "github:github/fetch@^0.10.1",
       "font-awesome": "npm:font-awesome@^4.3.0",
+      "grofit/aurelia-files": "github:grofit/aurelia-files@^0.0.1",
+      "lodash": "npm:lodash@^3.10.1",
       "text": "github:systemjs/plugin-text@^0.0.2"
     },
     "devDependencies": {

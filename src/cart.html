@@ -1,0 +1,27 @@
+<template>
+  <require from="../styles/cart.css"></require>
+  <require from="partials/cart-item"></require>
+  <section class="au-animate">
+    <div class="container">
+      <h2 class="page-header text-center">${heading}</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">1. Upload your files</h3>
+        </div>
+        <div class="panel-body cart-item" repeat.for="cartitem of cartItems">
+          <cart-item cartitem.bind="cartitem"></cart-item>
+        </div>
+        <div class="panel-body text-center cart-totals" if.bind="cartItems.length > 1">
+          <span>Items to be printed:</span>
+          <span class="cart-print-items">${totalItemsToPrint}</span>
+        </div>
+        <div class="cart-file-drop text-center">
+          <p if.bind="cartItems.length < 1">You don't have any files uploaded yet!</p>
+          <span class="btn btn-default btn-block btn-file">
+              <i class="fa fa-plus"></i> Browse for files or drop them here<input type="file" multiple accept=".stl" change.delegate="addCartItem($event)">
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

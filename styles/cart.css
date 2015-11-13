@@ -1,0 +1,49 @@
+.cart-item + .cart-item {
+  border-top: 1px solid #CCC;
+}
+.cart-item .cart-quantity {
+  width: 70px;
+}
+.cart-totals {
+  font-weight: bold;
+  border-top: 1px solid #CCC;
+}
+.cart-thumbnail {
+  margin-right: 10px;
+}
+.cart-item h4 {
+  margin-top: 4px;
+}
+
+.cart-file-drop p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cart-file-drop .btn-file {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-top: 1px solid #CCC;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.cart-file-drop .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

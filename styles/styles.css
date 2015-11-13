@@ -11,12 +11,10 @@ body {
 .splash .message {
   font-size: 72px;
   line-height: 72px;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
-  text-transform: uppercase;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.splash .fa-spinner {
+.splash .fa-circle-o-notch {
   text-align: center;
   display: inline-block;
   font-size: 72px;
@@ -59,8 +57,8 @@ section {
 
 /* animate page transitions */
 section.au-enter-active {
-  -webkit-animation: fadeInRight 1s;
-  animation: fadeInRight 1s;
+  -webkit-animation: fadeInUp 1s;
+  animation: fadeInUp 1s;
 }
 
 div.au-stagger {
@@ -128,11 +126,12 @@ div.au-stagger {
 }
 
 /* animation definitions */
-@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0)
+    -webkit-transform: translate3d(0, 50%, 0);
+    -ms-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)
   }
   100% {
     opacity: 1;
@@ -141,12 +140,12 @@ div.au-stagger {
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0)
+    -webkit-transform: translate3d(0, 50%, 0);
+    -ms-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)
   }
   100% {
     opacity: 1;
@@ -172,4 +171,12 @@ div.au-stagger {
   100% {
     opacity: 1;
   }
+}
+
+
+ai-dialog-overlay.active {
+  background-color: rgba(0,0,0,.5);
+}
+ai-dialog-container ai-dialog {
+  margin-top: 20%;
 }

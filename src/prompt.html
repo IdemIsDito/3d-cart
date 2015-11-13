@@ -1,0 +1,14 @@
+<template>
+  <ai-dialog>
+    <ai-dialog-header>
+      <h4 class="modal-title">Confirm</h4>
+    </ai-dialog-header>
+    <ai-dialog-body>
+      Are you sure you want to delete this item from your cart?
+    </ai-dialog-body>
+    <ai-dialog-footer>
+      <button class="btn btn-default" click.trigger="controller.cancel()">No</button>
+      <button class="btn btn-danger" click.trigger="controller.ok(person)">Yes</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>
